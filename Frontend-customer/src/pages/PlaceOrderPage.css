@@ -1,0 +1,127 @@
+.place-order-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.checkout-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.place-order-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.detail-section {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.detail-section h2 {
+  color: #B8860B;
+  margin-bottom: 0.5rem;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.order-item-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.order-item-name {
+  flex: 1;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.order-item-name:hover {
+  color: #B8860B;
+}
+
+.order-item-price {
+  font-weight: 500;
+  color: #444;
+}
+
+.order-summary-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.order-summary-card h2 {
+  margin-bottom: 1rem;
+  color: #B8860B;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem 0;
+}
+
+.summary-row.total {
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-top: 1px solid #eee;
+  padding-top: 0.8rem;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #B8860B;
+  color: #fff;
+  border: none;
+  border-radius: 25px;   /* same rounded pill style */
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.place-order-btn:hover {
+  background-color: #a37408;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.place-order-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+.error-message {
+  margin-top: 1rem;
+  color: red;
+  font-size: 0.9rem;
+}

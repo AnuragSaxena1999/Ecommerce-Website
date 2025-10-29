@@ -1,0 +1,136 @@
+/* .product-page-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-image-section {
+  flex: 1;
+}
+
+.product-image-section img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-details-section {
+  flex: 1;
+}
+
+.product-details-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.product-stock-status {
+  font-size: 1rem;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 1.5rem;
+}
+
+.product-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.add-to-cart-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #555;
+}
+.quantity-selector {
+  margin-bottom: 1.5rem;
+}
+.quantity-selector label {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+.quantity-selector select {
+  padding: 0.5rem;
+}
+.add-to-cart-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+} */
+ /* In frontend-customer/src/pages/ProductPage.css */
+/* In frontend-customer/src/pages/ProductPage.css */
+
+.product-image-gallery-wrapper {
+  max-height: 450px; /* Reduced from 550px for a smaller overall gallery */
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image-gallery-wrapper .image-gallery {
+  width: 100%;
+  height: 100%;
+}
+
+/* Specific styling for main image */
+.product-image-gallery-wrapper .image-gallery-image {
+  max-height: 380px; /* Reduced from 450px for main image height */
+  object-fit: contain; 
+  width: auto; 
+  margin: 0 auto; 
+}
+
+/* Adjust thumbnail size and styling */
+.product-image-gallery-wrapper .image-gallery-thumbnail-inner {
+  height: 70px; /* Slightly reduced thumbnail height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image-gallery-wrapper .image-gallery-thumbnail-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; 
+}
+/* productPage.css */
+.custom-gallery .image-gallery-slide img {
+  max-height: 500px;   /* Fix container ki height */
+  width: auto;         /* Maintain aspect ratio */
+  object-fit: contain; /* Image shrink hoke box ke andar fit ho */
+}
+.custom-gallery .image-gallery-thumbnails {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.custom-gallery .image-gallery-thumbnail {
+  width: 70px;         /* thoda bada thumbnail */
+  height: 70px;
+  border-radius: 8px;  /* premium look */
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 900px) { /* For md and smaller */
+  .product-image-gallery-wrapper {
+    max-height: 350px; /* Even smaller height on mobile */
+  }
+  .product-image-gallery-wrapper .image-gallery-image {
+    max-height: 280px; /* Further reduced main image height on mobile */
+  }
+}
